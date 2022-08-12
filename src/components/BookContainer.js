@@ -13,7 +13,7 @@ function BookContainer() {
           <li className="book-item">
 
             <Book author={books.author} title={books.title} />
-            <button className="remove">Remove</button>
+            <button className="remove" type="button">Remove</button>
           </li>
         </ul>
       </div>

@@ -1,12 +1,15 @@
 import React from 'react';
 
 function Book(props) {
+  const [title, author] = props;
   return (
     <div className="book">
-      {props.title}
-      {' '}
-      by
-      {props.author}
+      <p>
+        <span>{title}</span>
+        {' '}
+        by
+        <span>{author}</span>
+      </p>
     </div>
   );
 }
