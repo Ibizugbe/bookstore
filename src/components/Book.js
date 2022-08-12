@@ -1,8 +1,12 @@
 import React from 'react';
 
-function Book() {
+function Book(props) {
   return ( 
-    <div className="book"></div>
+    <div className="book">
+      {props.title}
+       by 
+      {props.author}
+    </div>
    );
 }
 

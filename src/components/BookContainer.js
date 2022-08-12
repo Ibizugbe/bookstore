@@ -6,7 +6,7 @@ function BookContainer() {
       <div className="book-container">
         <ul>
           <li className="book-item">
-            <Book />
+            <Book author="John Doe" title="My love story" />
             <button className="remove"></button>
           </li>
         </ul>
