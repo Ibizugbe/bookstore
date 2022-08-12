@@ -11,11 +11,11 @@ import Nav from './components/Nav';
 function App() {
   return (
     <>
-    <Nav />
-    <Routes>
-      <Route path="/" element={<BookContainer />} />
-      <Route path="/components/Catigory" element={<Catigory />} />
-    </Routes>
+      <Nav />
+      <Routes>
+        <Route path="/" element={<BookContainer />} />
+        <Route path="/components/Catigory" element={<Catigory />} />
+      </Routes>
     </>
   );
 }
