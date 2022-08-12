@@ -1,4 +1,5 @@
 import './App.css';
+import Catigory from './components/Catigory';
 
 function App() {
   return (
