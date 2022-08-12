@@ -1,8 +1,8 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 function Nav() {
-  return ( 
+  return (
     <header>
       <nav>
         <ul>
@@ -11,18 +11,18 @@ function Nav() {
         <ul>
           <li>
             <Link to="/" className="nav-links">
-                Books
+              Books
             </Link>
           </li>
           <li>
             <Link to="/components/Catigory" className="nav-links">
-                Catigory
+              Catigory
             </Link>
           </li>
         </ul>
       </nav>
     </header>
-   );
+  );
 }
 
 export default Nav;

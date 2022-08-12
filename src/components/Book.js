@@ -1,13 +1,13 @@
 import React from 'react';
 
 function Book(props) {
-  return ( 
+  return (
     <div className="book">
       {props.title}
-       by 
+      by
       {props.author}
     </div>
-   );
+  );
 }
 
 export default Book;

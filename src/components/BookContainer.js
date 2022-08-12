@@ -2,7 +2,7 @@ import React from 'react';
 import Book from './Book';
 
 function BookContainer() {
-  return ( 
+  return (
     <main>
       <div className="book-container">
         <ul>
@@ -13,7 +13,7 @@ function BookContainer() {
         </ul>
       </div>
     </main>
-   );
+  );
 }
 
 export default BookContainer;

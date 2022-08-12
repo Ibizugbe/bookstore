@@ -1,9 +1,9 @@
 import React from 'react';
 
 function Catigory() {
-  return ( 
+  return (
     <button>Check Status</button>
-   );
+  );
 }
 
 export default Catigory;
