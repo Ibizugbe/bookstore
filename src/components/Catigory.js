@@ -2,7 +2,7 @@ import React from 'react';
 
 function Catigory() {
   return (
-    <button>Check Status</button>
+    <button type="button">Check Status</button>
   );
 }
 
