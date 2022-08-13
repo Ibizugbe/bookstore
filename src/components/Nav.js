@@ -15,8 +15,8 @@ function Nav() {
             </Link>
           </li>
           <li>
-            <Link to="/components/Catigory" className="nav-links">
-              Catigory
+            <Link to="/components/Category" className="nav-links">
+              Category
             </Link>
           </li>
         </ul>

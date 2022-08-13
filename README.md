@@ -9,14 +9,6 @@
 
 - React (CRA)
 
-## Milestones
-
-- [x] Milestone 1: **Initialize project with components (React only).**
-- [x] Milestone 2: **Add reducers and actions.**
-- [x] Milestone 3: **Use Redux in React components.**
-- [x] Milestone 4: **Connect to API.**
-- [x] Milestone 5: **Styling**
-
 ## sneak peek
 
 ![Application screenshot]()
@@ -37,7 +29,6 @@ To get a local copy up and running follow these simple example steps.
 #### Set up your own copy locally
 
 - Clone [the GitHub Repository](https://github.com/Ibizugbe/bookstore)
-- Go to the Project `cd math-magicians`
 - Run `npm install` to install the _dependencies_
 - Run `npm start` to run the live server.
 

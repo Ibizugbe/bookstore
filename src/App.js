@@ -3,7 +3,7 @@ import {
   Routes,
   Route,
 } from 'react-router-dom';
-import Catigory from './components/Catigory';
+import Category from './components/Category';
 import BookContainer from './components/BookContainer';
 import Nav from './components/Nav';
 
@@ -13,7 +13,7 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/" element={<BookContainer />} />
-        <Route path="/components/Catigory" element={<Catigory />} />
+        <Route path="/components/Catigory" element={<Category />} />
       </Routes>
     </>
   );
