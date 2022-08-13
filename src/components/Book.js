@@ -1,7 +1,9 @@
+/* eslint-disable max-len */
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function Book(props) {
-  const {title, author} = props;
+  const { title, author } = props;
   return (
     <div className="book">
       <p>
@@ -14,5 +16,10 @@ function Book(props) {
     </div>
   );
 }
+
+Book.propTypes = {
+  title: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
+};
 
 export default Book;
