@@ -1,16 +1,14 @@
 /* eslint-disable max-len */
-import { React, useState } from 'react';
+import { React } from 'react';
 import Book from './Book';
 import Form from './Form';
 
 function BookContainer() {
-  const myBooks = useState(
-    [{
-      title: 'Habits in creation and destruction',
-      author: 'John Smith',
-      id: 1,
-    }],
-  );
+  const myBooks = [{
+    title: 'Habits in creation and destruction',
+    author: 'John Smith',
+    id: 1,
+  }];
   return (
     <main>
       <div className="book-container">
