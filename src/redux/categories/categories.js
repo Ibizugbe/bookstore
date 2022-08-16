@@ -5,7 +5,8 @@ export default function categoriesReducer(state = [], action) {
     case CHECK:
       return 'Under construction.';
     // unknown action
-    default: return state;
+    default: 
+      return state;
   }
 }
 

@@ -1,6 +1,6 @@
 const ADD_BOOK = 'bookstore/books/addBook';
 const REMOVE_BOOK = 'bookstore/books/removeBook';
-export default function addRemoveReducer(state = [], action) {
+export default function bookReducer(state = [], action) {
   switch (action.type) {
     // add action
     case ADD_BOOK: return [
