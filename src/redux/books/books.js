@@ -8,7 +8,7 @@ export default function addRemoveReducer(state = [], action) {
     ];
     // remove action
     case REMOVE_BOOK: return state.filter((book) => book.id !== action.id);
-    // unknown action
+    // when the action is not defined
     default: return state;
   }
 }
