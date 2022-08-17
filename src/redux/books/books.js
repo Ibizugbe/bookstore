@@ -4,7 +4,7 @@ export default function bookReducer(state = [], action) {
   switch (action.type) {
     // add action
     case ADD_BOOK: return [
-      ...state, action.payload,
+      ...state, action.book,
     ];
     // remove action
     case REMOVE_BOOK: return state.filter((book) => book.id !== action.id);
@@ -15,7 +15,7 @@ export default function bookReducer(state = [], action) {
 
 export const addBook = (book) => ({
   type: ADD_BOOK,
-  payload: book,
+  book,
 });
 
 export const removeBook = (id) => ({
