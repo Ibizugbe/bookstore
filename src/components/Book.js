@@ -1,9 +1,16 @@
 /* eslint-disable max-len */
-import React from 'react';
 import PropTypes from 'prop-types';
+import React from 'react';
+import { useDispatch } from 'react-redux';
+import { removeBook } from '../redux/books/books';
 
 function Book(props) {
-  const { title, author } = props;
+  const dispatch = useDispatch();
+  const { id, title, author } = props;
+
+  const removeBookFromList = () => {
+    dispatch(removeBook(id));
+  };
   return (
     <div className="book">
       <p>
@@ -13,6 +20,9 @@ function Book(props) {
         {' '}
         <span>{author}</span>
       </p>
+      <button type="button" onClick={removeBookFromList}>
+            Remove
+      </button>
     </div>
   );
 }
