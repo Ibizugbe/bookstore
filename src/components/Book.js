@@ -19,10 +19,10 @@ function Book(props) {
         by
         {' '}
         <span>{author}</span>
+        <button type="button" onClick={removeBookFromList}>
+          Remove
+        </button>
       </p>
-      <button type="button" onClick={removeBookFromList}>
-        Remove
-      </button>
     </div>
   );
 }
@@ -30,6 +30,7 @@ function Book(props) {
 Book.propTypes = {
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
 };
 
 export default Book;

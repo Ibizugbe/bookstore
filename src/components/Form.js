@@ -6,23 +6,23 @@ import { addBook } from '../redux/books/books';
 function Form() {
   const dispatch = useDispatch();
 
-  const [formState, setFormState] = useState({ title: '', author: '' });
+  const [formValue, setFormValue] = useState({ title: '', author: '' });
 
   const changeState = (e) => {
     e.preventDefault();
-    setFormState({ ...formState, [e.target.name]: e.target.value });
+    setFormValue({ ...formValue, [e.target.name]: e.target.value });
   };
 
   const bookState = (e) => {
     e.preventDefault();
-    if (!formState.title.trim() || !formState.author.trim()) return;
+    if (!formValue.title.trim() || !formValue.author.trim()) return;
     const book = {
       id: uuidv4(),
-      title: formState.title,
-      author: formState.author,
+      title: formValue.title,
+      author: formValue.author,
     };
     dispatch(addBook(book));
-    setFormState({ title: '', author: '' });
+    setFormValue({ title: '', author: '' });
   };
 
   return (
@@ -30,14 +30,14 @@ function Form() {
       <input
         type="text"
         onChange={changeState}
-        value={formState.author}
+        value={formValue.author}
         placeholder="Author"
         name="author"
       />
       <input
-        type="search"
+        type="text"
         onChange={changeState}
-        value={formState.title}
+        value={formValue.title}
         placeholder="title"
         name="title"
       />
