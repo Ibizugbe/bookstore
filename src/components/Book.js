@@ -21,7 +21,7 @@ function Book(props) {
         <span>{author}</span>
       </p>
       <button type="button" onClick={removeBookFromList}>
-            Remove
+        Remove
       </button>
     </div>
   );
