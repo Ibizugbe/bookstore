@@ -32,7 +32,7 @@ function Form() {
         onChange={changeState}
         value={formState.author}
         placeholder="Author"
-        name="Author"
+        name="author"
       />
       <input
         type="search"
