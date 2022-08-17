@@ -12,7 +12,6 @@ function BookContainer() {
         <ul>
           <li className="book-item">
             {myBooks.map((book) => <Book key={book.id} author={book.author} title={book.title} />)}
-            <button className="remove" type="button">Remove</button>
           </li>
         </ul>
         <Form />
