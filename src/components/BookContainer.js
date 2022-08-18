@@ -1,21 +1,17 @@
 /* eslint-disable max-len */
 import { React } from 'react';
+import { useSelector } from 'react-redux';
 import Book from './Book';
 import Form from './Form';
 
 function BookContainer() {
-  const myBooks = [{
-    title: 'Habits in creation and destruction',
-    author: 'John Smith',
-    id: 1,
-  }];
+  const myBooks = useSelector((state) => state.books);
   return (
     <main>
       <div className="book-container">
         <ul>
           <li className="book-item">
-            {myBooks.map((book) => <Book key={book.id} author={book.author} title={book.title} />)}
-            <button className="remove" type="button">Remove</button>
+            {myBooks.map((book) => <Book key={book.id} id={book.id} author={book.author} title={book.title} />)}
           </li>
         </ul>
         <Form />

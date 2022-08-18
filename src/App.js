@@ -13,7 +13,7 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/" element={<BookContainer />} />
-        <Route path="/components/Catigory" element={<Category />} />
+        <Route path="/components/Category" element={<Category />} />
       </Routes>
     </>
   );
