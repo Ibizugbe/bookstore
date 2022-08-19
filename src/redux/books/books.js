@@ -1,6 +1,13 @@
+import { createAsyncThunk } from '@reduxjs/toolkit';
+import axios from 'axios';
+import apiUrl from './src/api/api';
+
 const ADD_BOOK = 'bookstore/books/addBook';
 const REMOVE_BOOK = 'bookstore/books/removeBook';
-export default function bookReducer(state = [], action) {
+const FETCHBOOKS = 'bookstore/books/fetchBooks';
+
+const initialState = { books: [] };
+export default function bookReducer(state = initialState, action) {
   switch (action.type) {
     // add action
     case ADD_BOOK: return [
