@@ -21,7 +21,7 @@ function Form() {
     e.preventDefault();
     if (!formValue.title.trim() || !formValue.author.trim()) return;
     const book = {
-      id: uuidv4(),
+      item_id: uuidv4(),
       title: formValue.title,
       author: formValue.author,
       category: formValue.category,
@@ -31,7 +31,7 @@ function Form() {
   };
 
   return (
-    <form action="#" onSubmit={bookState}>
+    <form onSubmit={bookState}>
       <input
         type="text"
         onChange={changeState}
