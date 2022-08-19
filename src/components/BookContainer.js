@@ -17,7 +17,15 @@ function BookContainer() {
       <div className="book-container">
         <ul>
           <li className="book-item">
-            {myBooks.map((book) => <Book key={book.id} id={book.id} author={book.author} title={book.title} category={book.category} />)}
+            {myBooks.map((book) => (
+              <Book
+                key={book.id}
+                id={book.id}
+                author={book.author}
+                title={book.title}
+                category={book.category}
+              />
+            ))}
           </li>
         </ul>
         <Form />
