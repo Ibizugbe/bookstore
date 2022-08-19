@@ -2,9 +2,9 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 import apiUrl from '../api/api';
 
-const ADD_BOOK = 'bookstore/books/addBook';
-const REMOVE_BOOK = 'bookstore/books/removeBook';
-const FETCH_BOOKS = 'bookstore/books/fetchBooks';
+const ADD_BOOK = 'bookstore/books/ADD_BOOK';
+const REMOVE_BOOK = 'bookstore/books/REMOVE_BOOK';
+const FETCH_BOOKS = 'bookstore/books/FETCH_BOOKS';
 
 const initialState = { books: [] };
 export default function bookReducer(state = initialState, action) {
