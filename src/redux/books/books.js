@@ -1,6 +1,6 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
-import apiUrl from './src/api/api';
+import apiUrl from '../api/api';
 
 const ADD_BOOK = 'bookstore/books/addBook';
 const REMOVE_BOOK = 'bookstore/books/removeBook';
@@ -14,7 +14,10 @@ export default function bookReducer(state = initialState, action) {
     case `${ADD_BOOK}/fulfilled`:
       return { ...state, books: [...state.books, action.payload] };
     case `${REMOVE_BOOK}/fulfilled`:
-      return { ...state, books: state.books.filter((book) => book.item_id !== action.payload) };
+      return {
+        ...state,
+        books: state.books.filter((book) => book.item_id !== action.payload),
+      };
     default:
       return state;
   }

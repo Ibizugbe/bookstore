@@ -6,7 +6,11 @@ import { addBook } from '../redux/books/books';
 function Form() {
   const dispatch = useDispatch();
 
-  const [formValue, setFormValue] = useState({ title: '', author: '',  category: '', });
+  const [formValue, setFormValue] = useState({
+    title: '',
+    author: '',
+    category: '',
+  });
 
   const changeState = (e) => {
     e.preventDefault();
@@ -20,10 +24,10 @@ function Form() {
       id: uuidv4(),
       title: formValue.title,
       author: formValue.author,
-      category: values.category,
+      category: formValue.category,
     };
     dispatch(addBook(book));
-    setFormValue({ title: '', author: '', category: '', });
+    setFormValue({ title: '', author: '', category: '' });
   };
 
   return (
@@ -43,11 +47,11 @@ function Form() {
         name="title"
       />
       <input
-       type="text" 
-       name='category' 
-       value={formValue.category} 
-       onChange={changeState} 
-       placeholder="category"
+        type="text"
+        name="category"
+        value={formValue.category}
+        onChange={changeState}
+        placeholder="category"
       />
       <input type="submit" value="Add Book" />
     </form>
