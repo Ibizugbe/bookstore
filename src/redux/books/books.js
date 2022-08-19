@@ -28,8 +28,8 @@ const transformData = (myObj) => Object.keys(myObj).map((obj) => ({
 }));
 
 export const fetchBooks = createAsyncThunk(FETCH_BOOKS, async () => {
-  const res = await fetch(`${apiUrl}/books`);
-  const data = await res.json();
+  const response = await fetch(`${apiUrl}/books`);
+  const data = await response.json();
 
   const toSend = transformData(data);
 
