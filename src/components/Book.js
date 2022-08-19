@@ -17,7 +17,6 @@ function Book(props) {
         <span>{title}</span>
         {' '}
         by
-        {' '}
         <span>{author}</span>
         <button type="button" onClick={removeBookFromList}>
           Remove
