@@ -18,17 +18,23 @@ function Book(props) {
           <div className="col-5 p-3">
             <h4 className="fw-bold title">{title}</h4>
             <p className="mb-0 author">{author}</p>
+            <button className="btn p-0 my-btn" type="button">
+              comments
+            </button>
             <button
               type="button"
-              className="btn btn-primary btn-sm"
+              className="btn btn-sm my-btn"
               onClick={removeBookFromList}
             >
               Remove
             </button>
+            <button className="btn btn-sm my-btn" type="button">
+              edit
+            </button>
           </div>
           <div className="col-7">
             <div className="row">
-              <div className="col-4 p-0">
+              <div className="col-4">
                 <div className="circle-wrap">
                   <div className="circle">
                     <div className="mask full">
@@ -41,7 +47,7 @@ function Book(props) {
                   </div>
                 </div>
               </div>
-              <div className="col-2 d-flex p-0 align-items-center">
+              <div className="col-2 d-flex align-items-center">
                 <div className="text">
                   <h1 className="display-5">75%</h1>
                   <p>Completed</p>

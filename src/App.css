@@ -81,6 +81,10 @@ a {
   color: #4386bf;
 }
 
+.my-btn {
+  color: #4386bf !important;
+}
+
 .book {
   border: 1px solid #e8e8e8;
 }
