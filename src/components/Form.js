@@ -31,8 +31,11 @@ function Form() {
   };
 
   return (
-    <form onSubmit={bookState}>
+    <form onSubmit={bookState} className="ps-5 pe-5 pb-5 mb-5">
+      <hr />
+      <h2 className="form-header">Add New Book</h2>
       <input
+        className="inputs"
         type="text"
         onChange={changeState}
         value={formValue.author}
@@ -40,6 +43,7 @@ function Form() {
         name="author"
       />
       <input
+        className="inputs"
         type="text"
         onChange={changeState}
         value={formValue.title}
@@ -47,13 +51,14 @@ function Form() {
         name="title"
       />
       <input
+        className="inputs"
         type="text"
         name="category"
         value={formValue.category}
         onChange={changeState}
         placeholder="category"
       />
-      <input type="submit" value="Add Book" />
+      <input type="submit" value="Add Book" className="btn btn-primary" />
     </form>
   );
 }

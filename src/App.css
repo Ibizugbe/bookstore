@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,900&display=swap");
 
 body {
   background-color: #f7f7f7 !important;
@@ -8,7 +8,11 @@ body {
 }
 
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  margin-bottom: 5px !important;
 }
 
 ul {
@@ -30,7 +34,7 @@ nav {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .nav-links {
@@ -49,13 +53,31 @@ a {
   color: #0290ff;
 }
 
+.form-header {
+  font-size: 18px;
+  color: #706a6a;
+}
+
+.inputs {
+  background-color: white;
+  border: none;
+  height: 40px;
+  width: 250px;
+  margin-right: 10px;
+}
+
+::placeholder {
+  padding-left: 15px;
+  color: #706a6a;
+}
+
 .title {
-  font-size: 1.375rem;
+  font-size: 40px;
   color: #121212;
 }
 
 .author {
-  font-size: 0.875rem;
+  font-size: 22px;
   color: #4386bf;
 }
 
@@ -65,4 +87,63 @@ a {
 
 .book:hover {
   border: 1px solid #0290ff;
+}
+
+.circle-wrap {
+  width: 150px;
+  height: 150px;
+  background: #fefcff;
+  border-radius: 50%;
+  border: 1px solid #cdcbd0;
+}
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle-wrap .circle .mask {
+  clip: rect(0px, 150px, 150px, 75px);
+}
+
+.circle-wrap .inside-circle {
+  width: 122px;
+  height: 122px;
+  border-radius: 50%;
+  background: white;
+  line-height: 120px;
+  text-align: center;
+  margin-top: 14px;
+  margin-left: 14px;
+  color: #1e51dc;
+  position: absolute;
+  z-index: 100;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+/* color animation */
+
+/* 3rd progress bar */
+.mask .fill {
+  clip: rect(0px, 75px, 150px, 0px);
+  background-color: #227ded;
+}
+
+.mask.full,
+.circle .fill {
+  animation: fill ease-in-out 3s;
+  transform: rotate(135deg);
+}
+
+@keyframes fill {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(135deg);
+  }
 }

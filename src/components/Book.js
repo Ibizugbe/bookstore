@@ -15,15 +15,48 @@ function Book(props) {
     <>
       <div className="container-fluid px-5 mb-4">
         <div className="row  bg-white mt-3 book px-3 py-2">
-          <div className="col-6 p-3">
+          <div className="col-5 p-3">
             <h4 className="fw-bold title">{title}</h4>
             <p className="mb-0 author">{author}</p>
-            <button type="button" className="btn btn-primary btn-sm" onClick={removeBookFromList}>
+            <button
+              type="button"
+              className="btn btn-primary btn-sm"
+              onClick={removeBookFromList}
+            >
               Remove
             </button>
           </div>
-          <div className="col-6">
-            
+          <div className="col-7">
+            <div className="row">
+              <div className="col-4 p-0">
+                <div className="circle-wrap">
+                  <div className="circle">
+                    <div className="mask full">
+                      <div className="fill" />
+                    </div>
+                    <div className="mask half">
+                      <div className="fill" />
+                    </div>
+                    <div className="inside-circle" />
+                  </div>
+                </div>
+              </div>
+              <div className="col-2 d-flex p-0 align-items-center">
+                <div className="text">
+                  <h1 className="display-5">75%</h1>
+                  <p>Completed</p>
+                </div>
+              </div>
+              <div className="col-6 d-flex align-items-center justify-content-center">
+                <div className="progress-details">
+                  <p>Current chapter</p>
+                  <p>Chapter 17</p>
+                  <button type="button" className="btn btn-primary">
+                    UPDATE PROGRESS
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
