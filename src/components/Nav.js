@@ -5,7 +5,7 @@ function Nav() {
   return (
     <header>
       <nav>
-        <ul className="nav-ul">
+        <ul className="nav-ul p-0 m-0">
           <li className="nav-brand">Bookstore CMS</li>
           <li>
             <Link to="/" className="nav-links">
@@ -18,7 +18,7 @@ function Nav() {
             </Link>
           </li>
         </ul>
-        <ul>
+        <ul className="p-0 m-0">
           <li>
             <img src="" alt="profile" />
           </li>

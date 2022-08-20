@@ -12,17 +12,22 @@ function Book(props) {
     dispatch(removeBook(id));
   };
   return (
-    <div className="book">
-      <p>
-        <span>{title}</span>
-        {' '}
-        by
-        <span>{author}</span>
-        <button type="button" onClick={removeBookFromList}>
-          Remove
-        </button>
-      </p>
-    </div>
+    <>
+      <div className="container-fluid px-5 mb-4">
+        <div className="row  bg-white mt-3 book px-3 py-2">
+          <div className="col-6 p-3">
+            <h4 className="fw-bold title">{title}</h4>
+            <p className="mb-0 author">{author}</p>
+            <button type="button" className="btn btn-primary btn-sm" onClick={removeBookFromList}>
+              Remove
+            </button>
+          </div>
+          <div className="col-6">
+            
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
 
