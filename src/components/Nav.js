@@ -20,7 +20,7 @@ function Nav() {
         </ul>
         <ul className="p-0 m-0">
           <li>
-            <img src="" alt="profile" />
+            <i className="fa fa-user" style={{ color: '#0290ff' }} />
           </li>
         </ul>
       </nav>
