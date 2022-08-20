@@ -13,7 +13,7 @@ function Nav() {
             </Link>
           </li>
           <li>
-            <Link to="/components/Category" className="nav-links">
+            <Link to="/components/Category" className="nav-links text-muted">
               Category
             </Link>
           </li>
