@@ -1,8 +1,8 @@
 /* eslint-disable max-len */
-import PropTypes from "prop-types";
-import React from "react";
-import { useDispatch } from "react-redux";
-import { removeBook } from "../redux/books/books";
+import PropTypes from 'prop-types';
+import React from 'react';
+import { useDispatch } from 'react-redux';
+import { removeBook } from '../redux/books/books';
 
 function Book(props) {
   const dispatch = useDispatch();
