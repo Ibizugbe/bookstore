@@ -1,8 +1,8 @@
 /* eslint-disable max-len */
-import PropTypes from 'prop-types';
-import React from 'react';
-import { useDispatch } from 'react-redux';
-import { removeBook } from '../redux/books/books';
+import PropTypes from "prop-types";
+import React from "react";
+import { useDispatch } from "react-redux";
+import { removeBook } from "../redux/books/books";
 
 function Book(props) {
   const dispatch = useDispatch();
@@ -23,12 +23,12 @@ function Book(props) {
             </button>
             <button
               type="button"
-              className="btn btn-sm my-btn"
+              className="btn my-btn"
               onClick={removeBookFromList}
             >
               Remove
             </button>
-            <button className="btn btn-sm my-btn" type="button">
+            <button className="btn my-btn" type="button">
               edit
             </button>
           </div>
@@ -48,15 +48,15 @@ function Book(props) {
                 </div>
               </div>
               <div className="col-2 d-flex align-items-center">
-                <div className="text">
+                <div className="my-text">
                   <h1 className="display-5">75%</h1>
                   <p>Completed</p>
                 </div>
               </div>
               <div className="col-6 d-flex align-items-center justify-content-center">
                 <div className="progress-details">
-                  <p>Current chapter</p>
-                  <p>Chapter 17</p>
+                  <p className="chapter">Current chapter</p>
+                  <p className="number pb-3">Chapter 17</p>
                   <button type="button" className="btn btn-primary">
                     UPDATE PROGRESS
                   </button>
