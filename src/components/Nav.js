@@ -5,10 +5,8 @@ function Nav() {
   return (
     <header>
       <nav>
-        <ul>
-          <li className="nav-brand">Bookstore</li>
-        </ul>
-        <ul>
+        <ul className="nav-ul">
+          <li className="nav-brand">Bookstore CMS</li>
           <li>
             <Link to="/" className="nav-links">
               Books
@@ -18,6 +16,11 @@ function Nav() {
             <Link to="/components/Category" className="nav-links">
               Category
             </Link>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <img src="" alt="profile" />
           </li>
         </ul>
       </nav>
