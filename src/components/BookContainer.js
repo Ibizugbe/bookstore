@@ -15,7 +15,7 @@ function BookContainer() {
   return (
     <main>
       <div className="book-container">
-        <ul>
+        <ul className="p-0 m-0">
           <li className="book-item">
             {myBooks.map((book) => (
               <Book
