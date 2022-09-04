@@ -11,7 +11,7 @@
 
 ## sneak peek
 
-![Application screenshot]()
+![Application screenshot](./screenshot/bookstore-desktop.png)
 
 ## Getting Started
 
@@ -22,7 +22,7 @@ To get a local copy up and running follow these simple example steps.
 
 #### Use the live Website
 
-[Bookstore Website (Netlify)]()
+[Bookstore Website (Netlify)](https://book-store-97.netlify.app/)
 
 ### **Option 2**
 
